@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+</head>
+<body>
+    <div style="background-image: url(./assets/Baground\ img.jpg); margin: 0%; padding: 0%; background-size: 100% 100%; height: 100vh;
+    width: 100vw; display: flex; position: fixed;" class="instruction">
+    <h1>Instructions:</h1>
+        <h3>> This is a easy solo player game. Where you should shoot the balloons which appear in the screens in 60sec.<br><br>
+            > If you missed to shoot 5 balloons the game will comes to an end.<br><br>
+            > If you shooted all the balloon in 60sec you are the winner.<br><br>
+         <h3>
+
+            <button style="margin-top: 200%; margin-left: 440%; width: 150%; align-items: center; letter-spacing: 3px; font-size: 3ch;  font-family: Audiowide, sans-serif; align-items: center;" class="flex-center" id="button">Back</button>
+
+    </div>
+
+    <script>
+        var info = document.getElementById("button")
+        info.addEventListener("click",()=>{
+            window.location.href = "./index.html"
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <div class="home">
+           <img src="./assets/Screenshot_2023-11-06_135846-removebg-preview.png" alt="logo" id="logo"/>
+           <img src="./assets/info.png" alt="info" id="info"> 
+        <div id="player-info"> 
+            <label id="name" >Enter:</label>
+            <input id="name" name="name" type="text" placeholder="Player Name">
+       
+        </div>
+       <button  class="flex-center" id="button">Start</button>
+          
+    </div>
+    <script src="./app.js"></script>
+    <script>
+        var info = document.getElementById("info")
+        info.addEventListener("click",()=>{
+            window.location.href = "./info.html"
+        })
+    </script>
+</body>
+</html>

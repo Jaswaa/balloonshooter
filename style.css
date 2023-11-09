@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;701&family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    overflow: hidden;
+    font-size: large;
+    font-family: sans-serif;
+    font-style:oblique;
+}
+
+
+.home{
+    background-image: url(./assets/Baground\ img.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#info{
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 5ch;
+}
+
+h1{
+    margin-top: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h3{
+    font-size: 2ch;
+    margin-top: 10%;
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game{
+    background-image:url("./assets/Baground\ img.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    cursor: crosshair;
+}
+
+#logo{
+    margin-top: 150px;
+   
+}
+
+
+#player-info{
+    margin-top: 60px;
+    
+}
+
+#button{
+    max-width: 220px;
+    height: 60px;
+    width: 40vw;
+    margin-top: 40px;
+    padding: 5px;
+    border: 1px 0.9 black;
+    box-shadow: 0px 20px 20px rgba(0,0,0, 0.25);
+    border-radius: 50px;
+    border: 2px solid red;
+    background-color:red;
+    color: white;
+    font-size: 4ch;
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+
+}
+
+#button:hover{
+    background-color: black;
+}
+
+#name{
+    height: 30px;
+    padding: 5px;
+    width: 150px;
+    border: 1px 0.9 red;
+    border-radius: 10px;
+    color: white;
+    font-style: italic;
+    letter-spacing:0.1cm;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+
+#max-chances{
+    width: 100%;
+    height: 25px;   
+    background-color: red;
+    position: fixed;
+    bottom: 35px;
+    margin: 0 auto;
+}
+
+#chances{
+    z-index: 2;
+    width: 50%;
+    height: 25px;
+    border-radius: 17px;
+}
+
+#timer-sq{
+   font-size: 250%;
+   padding: 10px;
+   position: absolute;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+.balloon-image {
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50%;
+    animation: flying 2s infinite ease-in;
+    z-index: 2;
+    width: 20vw;
+    height: 100vh;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#youwon{
+    height: 400px;
+}
+
+#youlose{
+display: flex;
+justify-content: center; 
+align-items: center;
+height: 400px;
+}
+
+
+.win-sq,
+.gameover-sq{
+    background-image: url(./assets/Baground\ img.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lives{
+    position: relative;
+    left: 1050px;
+    bottom: 40px;
+}
+
+
+
+@keyframes flying {
+    0% {
+        bottom: -100px;
+    }
+
+    100% {
+        bottom: 1080px;
+    }
+}
+
+
+
